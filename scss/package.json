@@ -1,25 +1,28 @@
 {
   "dependencies": {
-    "normalize-scss": "^8.0.0",
+    "normalize-scss": "^7.0.1"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
     "stylelint": "^13.6.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-sass-guidelines": "^7.0.0",
-    "stylelint-prettier": "^1.1.2",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11"
+    "stylelint-prettier": "^1.1.2"
   },
   "scripts": {
     "lint": "stylelint src/**/*.scss",
-    "lint:fix": "stylelint src/**/*.scss --fix"
+    "lint:fix": "stylelint src/**/*.scss --fix",
+    "build": "node src/scripts/build.js"
   },
-    "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged"
-      }
-    },
-    "lint-staged": {
-      "*.scss": "npm run lint:fix"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.scss": "npm run lint:fix"
   }
-
+}
