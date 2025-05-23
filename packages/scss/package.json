@@ -1,4 +1,5 @@
 {
+  "name": "@react-design-system/scss",
   "dependencies": {
     "normalize-scss": "^7.0.1"
   },
