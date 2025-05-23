@@ -24,13 +24,13 @@
     transition: all 250ms ease;
 
     &--open {
-        transform: rotate(180deg);
+      transform: rotate(180deg);
     }
 
     &--closed {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
-}
+  }
 
   &__overlay {
     @include padding("none");
@@ -58,7 +58,7 @@
     box-sizing: border-box;
   }
 
-  &__option:hover {
+  &__option--highlighted {
     background-color: $form-bg-color-hover;
   }
   &__option--selected {
