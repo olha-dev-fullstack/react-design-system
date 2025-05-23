@@ -1,20 +1,21 @@
 const spaces = {
-    xxxs: 'xxxs',
+    none: "none",
+    xxxs: "xxxs",
     // 4px
-    xxs: 'xxs',
+    xxs: "xxs",
     // 8px
-    xs: 'xs',
+    xs: "xs",
     // 12px
-    sm: 'sm',
+    sm: "sm",
     // 16px
-    md: 'md',
+    md: "md",
     // 24px
-    lg: 'lg',
+    lg: "lg",
     // 32px
-    xl: 'xl',
+    xl: "xl",
     // 48px
-    xxl: 'xxl',
+    xxl: "xxl",
     // 72px
-    xxxl: 'xxxl',
+    xxxl: "xxxl",
 };
 export default Object.freeze(spaces);
